@@ -73,7 +73,7 @@ open class LuminaViewController: UIViewController {
         if let currentButton = _cancelButton {
             return currentButton
         }
-        let button = LuminaButton(with: SystemButtonType.cancel)
+        let button = LuminaButton(with: SystemButtonType.torch)
         button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         _cancelButton = button
         return button
