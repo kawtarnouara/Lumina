@@ -84,7 +84,8 @@ final class LuminaButton: UIButton {
              self.image = UIImage(named: "close", in: Bundle(for: LuminaViewController.self), compatibleWith: nil)
             self.frame = CGRect(origin: CGPoint(x: 10, y: UIScreen.main.bounds.maxY - 50), size: CGSize(width: self.cancelButtonWidth, height: self.cancelButtonHeight))
         case .shutter:
-            self.backgroundColor = UIColor.normalState
+            self.image = UIImage(named: "photo-camera", in: Bundle(for: LuminaViewController.self), compatibleWith: nil)
+            self.backgroundColor = UIColor.red
             var minY = UIScreen.main.bounds.maxY
             if #available(iOS 11, *) {
                 minY = self.safeAreaLayoutGuide.layoutFrame.maxY
