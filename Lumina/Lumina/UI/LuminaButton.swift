@@ -81,12 +81,8 @@ final class LuminaButton: UIButton {
             self.frame = CGRect(origin: CGPoint(x: UIScreen.main.bounds.maxX - 50, y: 10), size: CGSize(width: self.squareSystemButtonWidth, height: self.squareSystemButtonHeight))
             addButtonShadowEffects()
         case .cancel:
-            self.text = "X"
+             self.image = UIImage(named: "close", in: Bundle(for: LuminaViewController.self), compatibleWith: nil)
             self.frame = CGRect(origin: CGPoint(x: 10, y: UIScreen.main.bounds.maxY - 50), size: CGSize(width: self.cancelButtonWidth, height: self.cancelButtonHeight))
-            self.titleLabel?.font = UIFont.systemFont(ofSize: 40, weight: .light)
-            self.titleLabel?.layer.shadowOffset = CGSize(width: 0, height: 0)
-            self.titleLabel?.layer.shadowOpacity = 1
-            self.titleLabel?.layer.shadowRadius = 6
         case .shutter:
             self.backgroundColor = UIColor.normalState
             var minY = UIScreen.main.bounds.maxY
