@@ -23,7 +23,7 @@ open class LuminaViewController: UIViewController {
         }
     }
 
-    private var _previewLayer: AVCaptureVideoPreviewLayer?
+     var _previewLayer: AVCaptureVideoPreviewLayer?
     var previewLayer: AVCaptureVideoPreviewLayer {
         if let currentLayer = _previewLayer {
             return currentLayer
@@ -36,7 +36,7 @@ open class LuminaViewController: UIViewController {
         return layer
     }
 
-    private var _zoomRecognizer: UIPinchGestureRecognizer?
+     var _zoomRecognizer: UIPinchGestureRecognizer?
     var zoomRecognizer: UIPinchGestureRecognizer {
         if let currentRecognizer = _zoomRecognizer {
             return currentRecognizer
@@ -47,7 +47,7 @@ open class LuminaViewController: UIViewController {
         return recognizer
     }
 
-    private var _focusRecognizer: UITapGestureRecognizer?
+     var _focusRecognizer: UITapGestureRecognizer?
     var focusRecognizer: UITapGestureRecognizer {
         if let currentRecognizer = _focusRecognizer {
             return currentRecognizer
@@ -58,7 +58,7 @@ open class LuminaViewController: UIViewController {
         return recognizer
     }
 
-    private var _feedbackGenerator: LuminaHapticFeedbackGenerator?
+     var _feedbackGenerator: LuminaHapticFeedbackGenerator?
     var feedbackGenerator: LuminaHapticFeedbackGenerator {
         if let currentGenerator = _feedbackGenerator {
             return currentGenerator
@@ -68,7 +68,7 @@ open class LuminaViewController: UIViewController {
         return generator
     }
 
-    private var _cancelButton: LuminaButton?
+     var _cancelButton: LuminaButton?
     var cancelButton: LuminaButton {
         if let currentButton = _cancelButton {
             return currentButton
@@ -79,7 +79,7 @@ open class LuminaViewController: UIViewController {
         return button
     }
 
-    private var _shutterButton: LuminaButton?
+     var _shutterButton: LuminaButton?
     var shutterButton: LuminaButton {
         if let currentButton = _shutterButton {
             return currentButton
@@ -91,7 +91,7 @@ open class LuminaViewController: UIViewController {
         return button
     }
 
-    private var _switchButton: LuminaButton?
+     var _switchButton: LuminaButton?
     var switchButton: LuminaButton {
         if let currentButton = _switchButton {
             return currentButton
@@ -102,7 +102,7 @@ open class LuminaViewController: UIViewController {
         return button
     }
 
-    private var _torchButton: LuminaButton?
+     var _torchButton: LuminaButton?
     var torchButton: LuminaButton {
         if let currentButton = _torchButton {
             return currentButton
@@ -113,7 +113,7 @@ open class LuminaViewController: UIViewController {
         return button
     }
 
-    private var _textPromptView: LuminaTextPromptView?
+     var _textPromptView: LuminaTextPromptView?
     var textPromptView: LuminaTextPromptView {
         if let existingView = _textPromptView {
             return existingView
